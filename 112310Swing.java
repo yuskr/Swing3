@@ -13,9 +13,14 @@ public class JavaDemo {
         while (true){
             System.out.println("请输入一个数:");
             int a = scanner.nextInt();
-            int x = randomnum.nextInt(100);
-            int y = randomnum.nextInt(100);
-            System.out.println("(" + x + "," + y + ")");
+            if (a == 1 ){
+                int x = randomnum.nextInt(100);
+                int y = randomnum.nextInt(100);
+                System.out.println("(" + x + "," + y + ")");
+            }else {
+                System.out.println("只能输入1");
+            }
+
         }
 
     }
